@@ -2,6 +2,8 @@
   "name": "todux-web",
   "private": true,
   "version": "0.0.0",
+  "author": "Raketenoscar",
+  "description": "The Todux Web App",
   "type": "module",
   "scripts": {
     "dev": "vite",

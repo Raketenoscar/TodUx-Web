@@ -1,0 +1,38 @@
+.calender {
+  background-color: #1212126f;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex: 4;
+}
+.day-div {
+  border: 1px solid rgba(255, 255, 255, 0.663);
+  height: 200px;
+}
+.day {
+  color: rgba(255, 255, 255, 0.652);
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: default;
+}
+.calender-todo {
+  background-color: rgba(202, 0, 0, 0.886);
+  border-radius: 5px;
+  display: inline-block;
+  padding: 6px;
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.calender-todo-title,
+.calender-todo-dueDate {
+  display: inline;
+}
+.calender-todo-dueDate {
+  margin-left: 8px;
+}
+.calender-todo:hover {
+  opacity: 0.9;
+}
+.calender-todo:active {
+  opacity: 0.8;
+}

@@ -1,0 +1,33 @@
+.todo-sidebar {
+  background-color: #121212;
+  object-fit: contain;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+.todo-sidebar-title {
+  font-size: 50px;
+  margin-top: 20px;
+}
+.todo-sidebar-todos {
+  background-color: #262626a7;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+.todo-sidebar-todo {
+  margin: 5px 0;
+  background-color: rgba(202, 0, 0, 0.886);
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.todo-sidebar-todo-name,
+.todo-sidebar-todo-time {
+  display: inline;
+}
