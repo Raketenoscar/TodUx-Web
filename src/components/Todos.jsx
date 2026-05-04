@@ -11,14 +11,8 @@
         </div>
       </div>
     </div>-->*/
-import "../styles/todo-styles/calender.css";
-import "../styles/todo-styles/scaling.css";
-import "../styles/todo-styles/todo-sidebar.css";
-import "../styles/todo-styles/todo-window.css";
-export function Todos() {
-  return (
-    <>
-      <div className="website">
+
+/* <div className="website">
         <div className="todo-sidebar">
           <p className="todo-sidebar-title">Daily Todos</p>
           <div className="todo-sidebar-todos">
@@ -252,7 +246,17 @@ export function Todos() {
             </div>
           </div>
         </div>
-      </div>
-    </>
-  );
+      </div>*/
+import "../styles/todo-styles/calender.css";
+import "../styles/todo-styles/scaling.css";
+import "../styles/todo-styles/todo-sidebar.css";
+import "../styles/todo-styles/todo-window.css";
+import { SERVERIP } from "../../config/env.config";
+import axios from "axios";
+
+export async function Todos() {
+  const ip = SERVERIP;
+
+  let response = await axios.get(`${ip}`);
+  return <>{response.data}</>;
 }
